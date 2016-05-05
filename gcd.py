@@ -16,7 +16,7 @@ def gcd(u, v):
             t = u
             u = v
             v = t
-        u -= v
+        u = u % v
 
     print("GCD: %d" % (v))
     return v
@@ -24,3 +24,7 @@ def gcd(u, v):
 x, y = 267702, 178468
 print("x: %d, y: %d" % (x, y))
 gcd(x, y)
+
+a, b = 461952, 116298
+print("a: %d, b: %d" % (a, b))
+gcd(a, b)
