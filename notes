@@ -1,0 +1,17 @@
+Arrays 
+
+    Fundamentally tied to the machine's memory, and allow easy access to cells of memory on demand.
+    In many languages, arrays are a fixed size (must be known at compile time in Pascal or C), with data stored contiguosly in adjacent cells
+    Data are accessed by index, e.g. a[i]
+    O(1) operation to access an element of the list at a[i]
+
+Linked lists 
+
+    Can grow and shrink in size over their lifetime
+    Some operations in linked lists are easy: changing the start or end index, deleting an element, adding an element. In general, rearranging is easy
+    With linked lists, the ordering of elements is explicit. You have a set of nodes that are tied together by "links" from one node to the next
+    Every node must have a link, so the last node in the list has to point to some "dummy" node. This dummy node will point to itself
+        Moreover, we also have a dummy node before the start of the list, called "head". This node points to the first element of the linked list
+    These dummy nodes make manipulation of the first and last elements of the list more convenient
+    Finding a specific record in a linked list is hard (traversing the list requires you start at head and move through all the elemens, until you've reached your target)
+        Finding a node _before_ another node is also hard, since in a typical linked list the nodes are one way (doubly-linked lists can help you get around this issue)
